@@ -1,7 +1,7 @@
 <div class="max-w-5xl mx-auto p-6">
   <a
     routerLink="/characters"
-    class="inline-block mb-6 rounded-xl bg-blue-600 px-4 py-2 text-white hover:bg-blue-900 transition"
+    class="inline-block mb-6 rounded-xl bg-black px-4 py-2 text-white"
   >
     Back to Characters
   </a>
@@ -16,7 +16,7 @@
         <img
           [src]="character()!.image || 'https://placehold.co/500x700?text=No+Image'"
           [alt]="character()!.name"
-          class="w-full h-full object-cover min-h-[200px]"
+          class="w-full h-full object-cover"
         />
       </div>
 
