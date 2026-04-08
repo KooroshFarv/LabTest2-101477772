@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal } from '@angular/core';
+import { CharactersComponent } from './components/characters/characters.component';
+import { SpellsComponent } from './components/spells/spells.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CharactersComponent, SpellsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'harry-potter';
+  page = signal<'characters' | 'spells'>('characters');
 }
