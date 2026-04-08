@@ -7,3 +7,10 @@ export interface Character {
   alive: string
   actor: string
 }
+
+export interface Wand {
+  wood: string
+  core: string
+  length: number
+}
+

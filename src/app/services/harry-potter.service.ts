@@ -16,6 +16,9 @@ export class HarryPotterService {
   getSpell () {
     return this.http.get<Spell[]>(`${this.baseUrl}/spells`)
   }
+  getCharById(id : string) {
+    return this.http.get<Character[]>(`${this.baseUrl}/character/${id}`)
+  }
 
   constructor() { }
 }
